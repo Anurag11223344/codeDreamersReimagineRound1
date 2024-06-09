@@ -87,6 +87,10 @@ body{
     left: 0;
 }
 
+#header img{
+    height: 45px;
+}
+
 #navbar{
     display: flex;
     align-items: center;
@@ -148,10 +152,22 @@ body{
 
 #hero h4{
     padding-bottom: 15px;
+    font-size: 30px;
+}
+
+#hero h2{
+    padding-bottom: 15px;
+    font-size: 69px;
 }
 
 #hero h1{
     color: #088178;
+    font-size: 75px;
+}
+
+#hero p{
+    padding-top: 5px;
+    font-size: 24px;
 }
 
 #hero button{
@@ -163,7 +179,7 @@ body{
     background-repeat: no-repeat;
     cursor: pointer;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 23px;
 }
 
 #feature{
@@ -490,6 +506,8 @@ footer .col{
 
 footer .logo{
     margin-bottom: 30px;
+    height: 45px;
+    width: 180px;
 }
 
 footer h4{
