@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap');
 *{
     margin: 0;
-    padding: o;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1{
@@ -113,7 +117,7 @@ body{
 
 #navbar li a:hover,
 #navbar li a.active{
-    color: #088178;
+    color: #FF7043;
 }
 
 #navbar li a.active::after,
@@ -121,7 +125,7 @@ body{
     content: "";
     width: 30%;
     height: 2px;
-    background: #088178;
+    background: #FF7043;
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -161,7 +165,7 @@ body{
 }
 
 #hero h1{
-    color: #088178;
+    color: #FF7043;
     font-size: 75px;
 }
 
@@ -173,7 +177,7 @@ body{
 #hero button{
     background-image: url(./img/button.png);
     background-color: transparent;
-    color: #088178;
+    color: #FF7043;
     border: 0;
     padding: 14px 80px 14px 65px;
     background-repeat: no-repeat;
@@ -214,7 +218,7 @@ body{
     padding: 9px 8px 6px 8px;
     line-height: 1;
     border-radius: 4px;
-    color: #088178;
+    color: #FF7043;
     background-color: #fddde4;
     cursor: pointer;
 }
@@ -248,6 +252,10 @@ body{
     text-align: center;
 }
 
+/* #product1 p{
+    font-size: 25px;
+} */
+
 #product1 .pro-container{
     display: flex;
     justify-content: space-between;
@@ -275,6 +283,7 @@ body{
 #product1 .pro img{
     width: 100%;
     border-radius: 20px;
+    /* height: 340px; */
 }
 
 #product1 .pro .des{
@@ -284,6 +293,7 @@ body{
 
 #product1 .pro .des span{
     color: #606063;
+    /* padding-top: 9px; */
     font-size: 12px;
 }
 
@@ -294,6 +304,7 @@ body{
 }
 
 #product1 .pro .des i{
+    /* padding-top: 9px; */
     font-size: 12px;
     color: rgb(243, 181, 25);
 }
@@ -302,7 +313,7 @@ body{
     padding-top: 7px;
     font-size: 15px;
     font-weight: 700;
-    color: #088178;
+    color: #FF7043;
 }
 
 #product1 .pro .cart{
@@ -310,9 +321,9 @@ body{
     height: 40px;
     line-height: 40px;
     border-radius: 50px;
-    background-color: #e8f6ea;
-    color: #088178;
-    border: 1px solid #cce7d0;
+    background-color: #f7e8e5;
+    color: #FF7043;
+    border: 1px solid #f7ddd4;
     position: absolute;
     bottom: 12px;
     right: 10px;
@@ -347,7 +358,7 @@ body{
 }
 
 #banner button:hover{
-    background-color: #088178;
+    background-color: #FF7043;
     color: #fff;
 }
 
@@ -394,8 +405,8 @@ body{
 }
 
 #sm-banner .banner-box:hover button{
-    background: #088178;
-    border: 1px solid #088178;
+    background: #FF7043;
+    border: 1px solid #FF7043;
 }
 
 #banner3{
@@ -484,7 +495,7 @@ body{
 }
 
 #newsletter button{
-    background-color: #088178;
+    background-color: #FF7043;
     color: #fff;
     white-space: nowrap;
     border-top-left-radius: 0;
@@ -538,7 +549,7 @@ footer .follow i{
 }
 
 footer .install .row img{
-    border: 1px solid #088178;
+    border: 1px solid #FF7043;
     border-radius: 6px;
 }
 
@@ -548,7 +559,7 @@ footer .install img{
 
 footer .follow i:hover,
 footer a:hover{
-    color: #088178;
+    color: #FF7043;
 }
 
 footer .copyright{
@@ -557,7 +568,229 @@ footer .copyright{
 }
 
 
-/* Start Media Query */
+/* -------------------Shop Page-------------------- */
+
+#page-header{
+    background-image: url(./img/banner/b1.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2,
+#page-header p{
+    color: #fff;
+}
+
+#pagination{
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: #FF7043;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* --------------------Single Product----------------------  */
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2{
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details input:focus{
+    outline: none;
+}
+
+#prodetails .single-pro-details button{
+    background-color: #FF7043;
+    color: #fff;
+}
+
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}
+
+
+
+
+
+/*--------------------------------Blog Page----------------------------*/
+#page-header.blog-header{
+    background-image: url(./img/banner/b19.jpg);
+}
+
+#blog{
+    padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+}
+
+#blog .blog-img{
+    width: 50%;
+    margin-right: 40px;
+}
+
+#blog img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#blog .blog-details{
+    width: 50%;
+}
+
+#blog .blog-details a{
+    text-decoration: none;
+    font-size: 11px;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s;
+}
+
+#blog .blog-details a::after{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 4px;
+    right: -60px;
+    transition: 0.3s;
+}
+
+#blog .blog-details a:hover{
+    color: #FF7043;
+}
+
+#blog .blog-details a:hover::after{
+    background-color: #FF7043;
+}
+
+#blog .blog-box h1{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c9cbce;
+    z-index: -9;
+}
+
+/* -----------------------------------About----------------------------  */
+
+#page-header.about-header{
+    background-image: url(./img/about/banner.png);
+}
+
+#about-head{
+    display: flex;
+    align-items: center;
+}
+
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+
+#about-head div{
+    padding-left: 40px;
+}
+
+#about-app{
+    text-align: center;
+}
+
+#about-app .video{
+    width: 70%;
+    height: 90%;
+    margin: 30px auto 0 auto;
+}
+
+#about-app .video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+/* -------------------------Contact Details------------------------- */
+
+#contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+/* ----------------------Start Media Query---------------- */
 
 @media (max-width:799px) {
     .section-p1{
@@ -739,5 +972,65 @@ footer .copyright{
 
     footer .copyright{
         text-align: start;
+    }
+
+
+    /* ---------------------Single Product------------------ */
+
+    #prodetails{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #prodetails .single-pro-image{
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #prodetails .single-pro-details{
+        width: 100%;
+    }
+
+
+    /* ------------------------------Blog Page---------------------------- */
+
+    #blog{
+        padding: 100px 20px 0 20px;
+    }
+
+    #blog .blog-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #blog .blog-img{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    #blog .blog-details{
+        width: 100%;
+    }
+
+
+    /* ---------------------------------------About------------------------------- */
+
+    #about-head{
+        flex-direction: column;
+    }
+
+    #about-head img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #about-head div {
+        padding-left: 0px;
+    }
+
+    #about-app .video {
+        width: 100%;
     }
 }
