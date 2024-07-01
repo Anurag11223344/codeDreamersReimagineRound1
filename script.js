@@ -1,23 +1,15 @@
 const bar = document.getElementById('bar');
-const close = document.getElementById('close');
-const nav = document.getElementById('navbar');
-const act = document.getElementsByClassName("active")
+        const close = document.getElementById('close');
+        const nav = document.getElementById('navbar');
 
-if (bar) {
-    bar.addEventListener('click', () => {
-        nav.classList.add('active');
-    });
-}
+        if (bar) {
+            bar.addEventListener('click', () => {
+                nav.classList.add('active');
+            });
+        }
 
-// if (bar) {
-//     bar.addEventListener('click', () => {
-//         act[0].style.
-//     });
-// }
-if (close) {
-    close.addEventListener('click', () => {
-        nav.classList.remove('active');
-    });
-}
-
-
+        if (close) {
+            close.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        }
